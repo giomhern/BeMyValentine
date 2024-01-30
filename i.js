@@ -4,11 +4,15 @@ const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 const wrapperRect = wrapper.getBoundingClientRect();
 const noBtnRect = noBtn.getBoundingClientRect();
+const heart = document.querySelector(".heart-shape");
+const gif = document.querySelector(".snoopy-gif");
 yesBtn.addEventListener("click", () => {
-  question.innerHTML = "i love you";
+  question.innerHTML = "hehe you're my valentine 🤭";
+  heart.classList.add("hidden");
+  gif.classList.remove("hidden");
 });
 
-noBtn.addEventListener("click", () => {
+noBtn.addEventListener("mouseover", () => {
   const i =
     Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 1;
   const j =
