@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+*::selection {
+    background: #FF6F77;
+    color: #fff;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FF6F77;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/besitos/muah.jpg') no-repeat center center / cover;
+    opacity: 0.6;
+    z-index: -1;
+}
+.wrapper {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background: #fff;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h2 {
+    font-size: 3em;
+    color: #FF6F77;
+    margin-top: 20px;
+}
+.btn-group {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+button {
+    position: absolute;
+    width: 150px;
+    height: inherit;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #FF6F77;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .2);
+}
+button:nth-child(1) {
+    margin-left: -200px;
+    background: #FF6F77;
+}
+button:nth-child(2) {
+    margin-right: -200px;
+    color: #FF6F77;
+    background: #fff;
+}
+
+
+.heart-shape{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-color: #FF6F77;
+}
+
+.heart-shape:before{
+  position: absolute;
+  bottom: 0px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF6F77;
+}
+
+.heart-shape:after{
+  position: absolute;
+  top: -50px;
+  right: 0px;
+  width: 100px;
+  height: 100px;
+  content: '';
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+
+  background-color: #FF6F77;
+}
+
+.heart-shape:before,
+.heart-shape:after{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  content: '';
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #FF6F77;
+}
+.heart-shape:before{
+  bottom: 0px;
+  left: -50px;
+}
+.heart-shape:after{
+  top: -50px;
+  right: 0px;
+}
+
+.heart-shape{
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
